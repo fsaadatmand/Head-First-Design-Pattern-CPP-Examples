@@ -13,8 +13,8 @@ NOTE: stay tune for the rest of the patterns
 
 - [Chapter 1. Strategy](Strategy/)
 - [Chapter 2. Observer](Observer/)
-  - [Push](Observer/push)
-  - [Pull](Observer/pull)
+  - [Push](Observer/weather/)
+  - [Pull](Observer/weatherobservable/)
 - [Chapter 4. Decorator](Decorator/startbuzz)
 - [Chapter 4. Factory](Factory/)
 	- [Simple Factory](Factory/pizzas/)
