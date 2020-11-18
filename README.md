@@ -19,6 +19,6 @@ NOTE: stay tune for the rest of the patterns
   - [starBuzz Coffee Shop](Decorator/starbuzz/)
 - [Chapter 4. Factory](Factory/)
 	- [Simple Factory](Factory/pizzas/)
-	- [The Factory Method Pattern](Factory/pizzafm/)
+	- [The Factory Method](Factory/pizzafm/)
 	- [Abstract Factory](Factory/pizzaaf/)
 
