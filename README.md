@@ -15,8 +15,8 @@ NOTE: stay tune for the rest of the patterns
 - [Chapter 2. Observer](Observer/)
   - [Push](Observer/push)
   - [Pull](Observer/pull)
-- [Chapter 4. Factory](factory)
-	- [Simple Factory](pizzas/)
-	- [The Factory Method Pattern](pizzafm/)
-	- [Abstract Factory](pizzaaf/)
+- [Chapter 4. Factory](Factory/)
+	- [Simple Factory](Factory/pizzas/)
+	- [The Factory Method Pattern](Factory/pizzafm/)
+	- [Abstract Factory](Factory/pizzaaf/)
 
