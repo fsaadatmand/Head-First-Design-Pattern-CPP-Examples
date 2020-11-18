@@ -13,9 +13,10 @@ NOTE: stay tune for the rest of the patterns
 
 - [Chapter 1. Strategy](Strategy/)
 - [Chapter 2. Observer](Observer/)
-  - [Push](Observer/weather/)
-  - [Pull](Observer/weatherobservable/)
-- [Chapter 3. Decorator](Decorator/startbuzz)
+  - [Weather-O-Rama: push model](Observer/weather/)
+  - [Weather-O-Rama: pull model](Observer/weatherobservable/)
+- [Chapter 3. Decorator](Decorator/)
+  - [starBuzz Coffee Shop](Decorator/starbuzz/)
 - [Chapter 4. Factory](Factory/)
 	- [Simple Factory](Factory/pizzas/)
 	- [The Factory Method Pattern](Factory/pizzafm/)
