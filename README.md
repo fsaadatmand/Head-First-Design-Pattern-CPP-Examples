@@ -34,4 +34,4 @@ NOTE: stay tune for the rest of the patterns
     - [Remote Control](Command/remote/)
     - [Remote Control with undo](Command/undo/)
     - [Remote Control Party Macros](Command/party/)
-    - [Dinner Order using lambda function](Command/dinner/Lambda/)
+    - [Dinner Order using lambda function](Command/dinnerLambda/)
