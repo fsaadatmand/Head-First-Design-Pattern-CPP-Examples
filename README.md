@@ -35,3 +35,8 @@ NOTE: stay tune for the rest of the patterns
     - [Remote Control with undo](Command/undo/)
     - [Remote Control Party Macros](Command/party/)
     - [Dinner Order using lambda function](Command/dinnerLambda/)
+- [Chapter 7. Adapter](Adapter/)
+    - [Ducks](Adapter/ducks/)
+       - [Object Adapter](Adapter/ducks/object_adapter/)
+       - [Class Adapter](Adapter/ducks/class_adapter/)
+    - [Iterator to Enumeration Adapter] No equivalent in C++
