@@ -29,4 +29,9 @@ NOTE: stay tune for the rest of the patterns
     - [Eagerly created instance](Singleton/stat/)
     - [Double-checked lock](Singleton/dcl/)
 	- [Subclassed](Singleton/subclass/)
-
+- [Chapter 6. Command](Command/)
+    - [Simple Remote Control](Command/simpleremote/)
+    - [Remote Control](Command/remote/)
+    - [Remote Control with undo](Command/undo/)
+    - [Remote Control Party Macros](Command/party/)
+    - [Dinner Order using lambda function](Command/dinner/Lambda/)
