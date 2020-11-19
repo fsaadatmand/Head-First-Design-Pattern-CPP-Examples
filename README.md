@@ -21,4 +21,12 @@ NOTE: stay tune for the rest of the patterns
 	- [Simple Factory](Factory/pizzas/)
 	- [The Factory Method](Factory/pizzafm/)
 	- [Abstract Factory](Factory/pizzaaf/)
+- [Chapter 5. Singleton](Singleton/)
+    - [Classic Singleton](Singleton/classic/)
+	- [Chocolate Boiler](Singleton/stat
+	- Thread Safe:
+    - [Synchronized](Singleton/threadsafe/)
+    - [Eagerly created instance](Singleton/stat/)
+    - [Double-checked lock](Singleton/threadsafe/)
+	- [Subclass](singleton/subclass/)
 
