@@ -27,6 +27,6 @@ NOTE: stay tune for the rest of the patterns
 - Thread Safe:
     - [Synchronized](Singleton/threadsafe/)
     - [Eagerly created instance](Singleton/stat/)
-    - [Double-checked lock](Singleton/threadsafe/)
+    - [Double-checked lock](Singleton/dcl/)
 	- [Subclassed](Singleton/subclass/)
 
