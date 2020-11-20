@@ -20,7 +20,7 @@ bool
 CoffeeWithHook::customerWantCondiment()
 {
 	std::string answer = getUSerInput();
-	if (std::tolower(answer[0] == 'y'))
+	if (std::tolower(answer[0]) == 'y')
 		return true;
 	return false;
 }
