@@ -40,3 +40,6 @@ NOTE: stay tune for the rest of the patterns
        - [Object Adapter](Adapter/ducks/object_adapter/)
        - [Class Adapter](Adapter/ducks/class_adapter/)
 	- [Facade](Facade/hometheater/)
+- [Chapter 8. Template Method](TemplateMethod/)
+    - [Barista: Coffee and Tea](TemplateMethod/barista/)
+    - [sort](TemplateMethod/sort/)
