@@ -39,4 +39,4 @@ NOTE: stay tune for the rest of the patterns
     - [Adapter](Adapter/ducks/)
        - [Object Adapter](Adapter/ducks/object_adapter/)
        - [Class Adapter](Adapter/ducks/class_adapter/)
-	- [Facade](Facade/hometheater)
+	- [Facade](Facade/hometheater/)
