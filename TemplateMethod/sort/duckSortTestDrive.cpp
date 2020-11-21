@@ -24,7 +24,15 @@ int main()
 	std::sort(ducks.begin(), ducks.end()); 
 
 	std::cout << "\nAfter sorting:\n";
+	std::cout << "descending order\n";
 	display(ducks);
 	
+	// Template pattern can be achieved through functional style programming
+	// through the use of function pointers and lambda's
+	std::sort(ducks.begin(), ducks.end(),
+			[] (const Duck &a, const Duck &b) { return a.getWeight() > b.getWeight(); });
+	std::cout << "\nAscending order:\n";
+	display(ducks);
+
 	return 0;
 }
