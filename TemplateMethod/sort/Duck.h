@@ -13,30 +13,30 @@
  */
 
 class Duck {
-	// overloaded output operator
-	friend std::ostream& operator<<(std::ostream &, const Duck &); 
-	// overloaded less-than operator
-	friend bool operator<(const Duck &, const Duck &);
 	public:
 		Duck(const std::string &n, int w) : name(n), weight(w) {}
+		int getWeight() const { return weight; }
+		std::string getName() const { return name; }
 	private:
 		std::string name;
 		int weight;
 };
 
+// overloaded output operator
 inline
 std::ostream&
 operator<<(std::ostream &os, const Duck &duck)
 {
-	os << duck.name << " weighs " << duck.weight;
+	os << duck.getName() << " weighs " << duck.getWeight();
 	return os;
 }
 
+// overloaded less-than operator
 inline
 bool
 operator<(const Duck &lhs, const Duck &rhs)
 {
-	return lhs.weight < rhs.weight;
+	return lhs.getWeight() < rhs.getWeight();
 }
 
 #endif /* DUCK_H */
