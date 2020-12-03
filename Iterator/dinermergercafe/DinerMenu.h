@@ -2,6 +2,7 @@
 #define DINER_MENU_H
 
 #include "DinerMenuIterator.h"
+#include "Menu.h"
 #include "MenuItem.h"
 #include <array>
 #include <iostream>
@@ -9,7 +10,7 @@
 #include <ostream>
 #include <string>
 
-class DinerMenu {
+class DinerMenu : public Menu {
 	public:
 		DinerMenu();
 		std::string getMenuDescription() const { return menuDesciption; }

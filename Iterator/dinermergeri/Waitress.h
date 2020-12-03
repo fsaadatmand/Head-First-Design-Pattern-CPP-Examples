@@ -1,28 +1,25 @@
 #ifndef WAITRESS_H
 #define WAITRESS_H
 
-#include "DinerMenu.h"
-#include "DinerMenuIterator.h"
+#include "Menu.h"
 #include "Iterator.h"
-#include "PancakeHouseMenu.h"
-#include "PancakeHouseMenuIterator.h"
 #include <iostream>
 #include <memory>
 
 class Waitress {
 	public:
-		Waitress(PancakeHouseMenu *phm, DinerMenu *dm) :
+		Waitress(Menu *phm, Menu *dm) :
 			pancakeHouseMenu(phm), dinerMenu(dm) {}
-		void printMenu() const;
+		void printMenu();
 		void printMenu(Iterator<MenuItem> *iteator) const;
 	private:
-		PancakeHouseMenu *pancakeHouseMenu;
-		DinerMenu *dinerMenu;
+		Menu *pancakeHouseMenu;
+		Menu *dinerMenu;
 };
 
 inline
 void
-Waitress::printMenu() const
+Waitress::printMenu()
 {
 		auto pancakeIterator = pancakeHouseMenu->createIterator();
 		auto dinerIterator = dinerMenu->createIterator();

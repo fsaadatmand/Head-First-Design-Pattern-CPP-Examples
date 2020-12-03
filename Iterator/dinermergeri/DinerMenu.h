@@ -2,6 +2,7 @@
 #define DINER_MENU_H
 
 #include "DinerMenuIterator.h"
+#include "Menu.h"
 #include "MenuItem.h"
 #include <array>
 #include <iostream>
@@ -9,7 +10,7 @@
 #include <ostream>
 #include <string>
 
-class DinerMenu {
+class DinerMenu : public Menu {
 	public:
 		DinerMenu();
 		std::string getMenuDescription() const { return menuDesciption; }
@@ -26,20 +27,12 @@ class DinerMenu {
 inline
 DinerMenu::DinerMenu()
 {
-	addItem("Vegetarian BLT",
-			"(Fakin') Bacon with lettuce & tomato on whole wheat", true, 2.99);
-	addItem("BLT",
-			"Bacon with lettuce & tomato on whole wheat", false, 2.99);
-	addItem("Soup of the day",
-			"Soup of the day, with a side of potato salad", false, 3.29);
-	addItem("Hotdog",
-			"A hot dog, with sauerkraut, relish, onions, topped with cheese",
-			false, 3.05);
-	addItem("Steamed Veggies and Brown Rice",
-			"Steamed vegetables over brown rice", true, 3.99);
-	addItem("Pasta",
-			"Spaghetti with Marinara Sauce, and a slice of sourdough bread",
-			true, 3.89);
+	addItem("Vegetarian BLT", "(Fakin') Bacon with lettuce & tomato on whole wheat", true, 2.99);
+	addItem("BLT", "Bacon with lettuce & tomato on whole wheat", false, 2.99);
+	addItem("Soup of the day", "Soup of the day, with a side of potato salad", false, 3.29);
+	addItem("Hotdog", "A hot dog, with sauerkraut, relish, onions, topped with cheese", false, 3.05);
+	addItem("Steamed Veggies and Brown Rice", "Steamed vegetables over brown rice", true, 3.99);
+	addItem("Pasta", "Spaghetti with Marinara Sauce, and a slice of sourdough bread", true, 3.89);
 }
 
 inline

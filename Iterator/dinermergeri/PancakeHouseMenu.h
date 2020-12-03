@@ -1,6 +1,7 @@
 #ifndef PANCAKE_HOUSE_MENU_H
 #define PANCAKE_HOUSE_MENU_H
 
+#include "Menu.h"
 #include "MenuItem.h"
 #include "PancakeHouseMenuIterator.h"
 #include <list>
@@ -8,12 +9,12 @@
 #include <memory>
 #include <string>
 
-class PancakeHouseMenu {
+class PancakeHouseMenu : public Menu {
 	public:
 		PancakeHouseMenu();
 		std::string getMenuDescription() const { return menuDesciption; }
 		void addItem(std::string_view, std::string_view, bool, double);
-		std::unique_ptr<Iterator<MenuItem>> createIterator() {
+		std::unique_ptr<Iterator<MenuItem>> createIterator() override {
 			return std::make_unique<PancakeHouseMenuIterator>(menuItems); }
 	private:
 		std::string menuDesciption = "Objectville Pancake House Menu";
