@@ -36,7 +36,7 @@ NOTE: stay tune for the rest of the patterns
     - [Remote Control Party Macros](Command/party/)
     - [Dinner Order using lambda function](Command/dinnerLambda/)
 - Chapter 7. Adapter and Facade
-    - [Adapter]
+    - Adapter
        - [Object Adapter](Adapter/ducks/object_adapter/)
        - [Class Adapter](Adapter/ducks/class_adapter/)
 	- [Facade](Facade/hometheater/)
@@ -51,7 +51,7 @@ NOTE: stay tune for the rest of the patterns
 	- Composite
 		- [Menu](Composite/menu/)
 		- [Menu Iterator](Composite/menuiterator/)
-- [Chapter 10. State]
+- Chapter 10. State
 	- [Gumball Machine - without state pattern](State/gumball/)
 	- [Gumball Machine - with state pattern](State/gumballstate/)
 	- [Gumball Machine - with Winner State](State/gumballstatewinner/)
