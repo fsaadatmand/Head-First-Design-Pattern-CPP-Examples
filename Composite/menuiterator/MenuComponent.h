@@ -9,8 +9,8 @@ template <typename T> class Iterator; // template declaration
 
 class MenuComponent {
 	public:
-		using menu_component_t = std::shared_ptr<MenuComponent>;
-		using menu_component_iterator = std::shared_ptr<Iterator<MenuComponent>>;
+		using menu_component_iterator = Iterator<MenuComponent>*;
+		using menu_component_t = MenuComponent *;
 		virtual ~MenuComponent() = default;
 		virtual menu_component_iterator createIterator() = 0;
 		virtual void add([[maybe_unused]]menu_component_t menuComponent) {

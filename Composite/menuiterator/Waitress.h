@@ -32,6 +32,6 @@ Waitress::printVegitarianMenu()
 				menuComponent->print();
 		} catch (std::invalid_argument e) { }
 	}
-
 }
+
 #endif /* WAITRESS_H */

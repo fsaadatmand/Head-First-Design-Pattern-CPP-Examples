@@ -8,7 +8,7 @@ template <typename T>
 class Iterator {
 	public:
 		virtual ~Iterator() = default;
-		virtual std::shared_ptr<T> next() = 0;
+		virtual T* next() = 0;
 		virtual bool hasNext() = 0;
 		virtual void remove() = 0;
 };

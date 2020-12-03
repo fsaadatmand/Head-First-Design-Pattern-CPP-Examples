@@ -40,7 +40,7 @@ CompositeIterator::hasNext()
 {
 	if (stack.empty()) // exist condition
 		return false;
-	auto iterator = stack.top();
+	menu_component_iterator iterator = stack.top();
 	if (!iterator->hasNext()) {
 		stack.pop(); // pop to satisfy the exist condition
 		return hasNext(); // recur

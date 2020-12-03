@@ -13,8 +13,7 @@
 
 class Menu : public MenuComponent {
 	public:
-		Menu(std::string_view n, std::string_view d)
-			: name(n), description(d) { }
+		Menu(std::string_view n, std::string_view d) : name(n), description(d) { }
 		menu_component_iterator createIterator() override;
 		void add(menu_component_t menuComponent) override {
 			menuComponents.push_back(menuComponent); }
@@ -25,7 +24,8 @@ class Menu : public MenuComponent {
 		void print() const override;
 	private:
 		std::list<menu_component_t> menuComponents;
-		menu_component_iterator iterator = nullptr;
+		std::unique_ptr<MenuIterator> menuIterator = nullptr;
+		std::unique_ptr<Iterator<MenuComponent>> iterator = nullptr;
 		std::string name;
 		std::string description;
 };
@@ -35,10 +35,10 @@ Menu::menu_component_iterator
 Menu::createIterator()
 {
 	if (iterator == nullptr) {
-		auto menuIterator = std::make_shared<MenuIterator>(menuComponents);
-		iterator = std::make_shared<CompositeIterator>(menuIterator);
+		menuIterator = std::make_unique<MenuIterator>(menuComponents);
+		iterator = std::make_unique<CompositeIterator>(menuIterator.get());
 	}
-	return iterator;
+	return iterator.get();
 }
 
 inline
